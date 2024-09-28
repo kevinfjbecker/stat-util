@@ -6,7 +6,7 @@ function quartiles(arr)
         (a[Math.floor((a.length - 1) / 2)] + a[Math.ceil((a.length - 1) / 2)] ) / 2
     )
     
-    const sortedArr = arr.sort((a, b) => a - b)
+    const sortedArr = arr.toSorted((a, b) => a - b)
     
     return [
         median(bottom(sortedArr)),
